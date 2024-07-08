@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portal Juegos</title>
+</head>
+<body>
+    <h1>Gestión de Juegos</h1>
+    <form id="juegoForm">
+        <input type="hidden" id="juegoId">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="version">Version:</label>
+        <input type="text" id="version" required>
+        <label for="precio">Precio:</label>
+        <input type="number" step="0.1" id="precio" required>
+        <button type="submit">Guardar</button>
+    </form>
+    <table id="juegosTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Version</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
